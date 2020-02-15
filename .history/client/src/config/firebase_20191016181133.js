@@ -3,9 +3,9 @@ const firebase = require("firebase/app");
 require("firebase/firestore");
 
 firebase.initializeApp({
-	apiKey: "AIzaSyCq4MHSFEV9IDzMpFKbaHpUDFV7XeZE9N0",
-	authDomain: "kanban-c286f.firebaseapp.com",
-	projectId: "kanban-c286f"
+  apiKey: process.env.VUE_APP_API_KEY,
+  authDomain: process.env.VUE_APP_AUTH_DOMAIN,
+  projectId: process.env.VUE_APP_PROJECT_ID
 });
 
 module.exports = firebase;
